@@ -1,4 +1,6 @@
 title: Aide-mémoire Python
 description: 
-theme: jekyll-theme-dinky
-markdown: kramdown
+theme: jekyll-theme-cayman
+author: Edward Galantay
+navbar-links:
+  Matplotlib: ./matplotlib.md
