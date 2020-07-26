@@ -87,6 +87,11 @@ plt.plot() prends plusieurs arguments:
 # Docker 
 
 ## Commandes de bases
+
+Créer un nouveau container:
+
+
+
 View all containers: 
 `docker ps -a`
 
@@ -99,7 +104,6 @@ Start container and link bash
 Run another terminal in a container:
 `docker exec -it <container> bash`
 
-Créer un nouveau container 
 
 
 
