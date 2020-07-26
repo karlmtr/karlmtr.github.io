@@ -1,3 +1,5 @@
+{:toc}
+
 # Pour commencer
 Dans matplotlib, il y a deux "objets" principaux:
 
@@ -11,11 +13,6 @@ Pour utiliser matplotlib, il suffit la plupart du temps d'importer la partie "py
 ```PYTHON
 import matplotlib.pyplot as plt
 ```
-## Les fonctions générales
-Certaines fonctions vont revenir dans chaque script:
-
-* la fonction qui permet de tout afficher : `plt.plot()` pas besoin de mettre 
-
 
 # Les dfférentes approches de Matplotlib
 
@@ -25,7 +22,17 @@ Matplotlib permet plusieurs approches pour créer des graphiques.
 
 Cette approche est utile si l'on n'a qu'une seule figure avec qu'un seul axe.
 
-Pour créer 
+```PyTHON
+ import matplotlib.pyplot as plt
+ 
+
+## On crée nos données
+x =[1,2,3,4,5,6,7,8,9,10]
+y =[2,6,3,7,1,4,6,8,3,11]
+
+plt.plot(x,y) # plt.plot() permet de 
+plt.show()
+```
 
 
 
