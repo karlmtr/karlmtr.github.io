@@ -1,4 +1,10 @@
-* TOC {:toc}
+- [Python](#python)
+	- [Matplotlib](#matplotlib)
+		- [Les différentes approches de Matplotlib](#les-différentes-approches-de-matplotlib)
+			- [La plus simple (et la moins recommandée)](#la-plus-simple-et-la-moins-recommandée)
+				- [La plus complète (recommandée)](#la-plus-complète-recommandée)
+		- [La fonction plot()](#la-fonction-plot)
+- [Docker](#docker)
 
 # Python
 ## Matplotlib
