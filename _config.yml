@@ -3,4 +3,4 @@ description:
 theme: jekyll-theme-cayman
 author: Edward Galantay
 navbar-links:
-  Matplotlib: ./matplotlib.md
+  Matplotlib: "./matplotlib.md"
