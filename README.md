@@ -2,9 +2,10 @@
 	- [Matplotlib](#matplotlib)
 		- [Les différentes approches de Matplotlib](#les-différentes-approches-de-matplotlib)
 			- [La plus simple (et la moins recommandée)](#la-plus-simple-et-la-moins-recommandée)
-				- [La plus complète (recommandée)](#la-plus-complète-recommandée)
+			- [La plus complète (recommandée)](#la-plus-complète-recommandée)
 		- [La fonction plot()](#la-fonction-plot)
 - [Docker](#docker)
+	- [Commandes de bases](#commandes-de-bases)
 
 # Python
 ## Matplotlib
@@ -40,7 +41,7 @@ y =[2,6,3,7,1,4,6,8,3,11]
 plt.plot(x,y) # plt.plot() utilisé pour nuages de points (reliés ou pas) 
 plt.show()
 ```
-##### La plus complète (recommandée)
+#### La plus complète (recommandée)
 
 avec cette technique on utilise les figures et les axes.
 
@@ -84,6 +85,21 @@ plt.plot() prends plusieurs arguments:
 
 
 # Docker 
+
+## Commandes de bases
+View all containers: 
+`docker ps -a`
+
+Rename container: 
+`docker rename CONTAINER NEW_NAME`
+
+Start container and link bash
+`docker start -i NAME_CONTAINER_OR_ID`
+
+Run another terminal in a container:
+`docker exec -it <container> bash`
+
+Créer un nouveau container 
 
 
 
