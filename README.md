@@ -1,4 +1,4 @@
-{:toc}
+* TOC {:toc}
 
 # Pour commencer
 Dans matplotlib, il y a deux "objets" principaux:
@@ -30,7 +30,7 @@ Cette approche est utile si l'on n'a qu'une seule figure avec qu'un seul axe.
 x =[1,2,3,4,5,6,7,8,9,10]
 y =[2,6,3,7,1,4,6,8,3,11]
 
-plt.plot(x,y) # plt.plot() permet de 
+plt.plot(x,y) # plt.plot() utilisé pour 
 plt.show()
 ```
 
