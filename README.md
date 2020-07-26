@@ -1,6 +1,7 @@
 * TOC {:toc}
 
-# Pour commencer
+# Python
+## Matplotlib
 Dans matplotlib, il y a deux "objets" principaux:
 
 * Les figures: on peut les considérer comme les "fenêtres"
@@ -14,11 +15,11 @@ Pour utiliser matplotlib, il suffit la plupart du temps d'importer la partie "py
 import matplotlib.pyplot as plt
 ```
 
-# Les différentes approches de Matplotlib
+### Les différentes approches de Matplotlib
 
 Matplotlib permet plusieurs approches pour créer des graphiques. 
 
-## La plus simple (et la moins recommandée)
+#### La plus simple (et la moins recommandée)
 
 Cette approche est utile si l'on n'a qu'une seule figure avec qu'un seul axe.
 
@@ -33,11 +34,11 @@ y =[2,6,3,7,1,4,6,8,3,11]
 plt.plot(x,y) # plt.plot() utilisé pour nuages de points (reliés ou pas) 
 plt.show()
 ```
-## La plus complète (recommandée)
+##### La plus complète (recommandée)
 
 avec cette technique on utilise les figures et les axes.
 
-```PYTHON
+```python
 import matplotlib.pyplot as plt
 
 # On crée nos données
@@ -45,18 +46,38 @@ x =[1,2,3,4,5,6,7,8,9,10]
 y =[2,6,3,7,1,4,6,8,3,11]
 
 fig,ax = plt.subplots() # on crée une figure et un axe
+#une autre manière:
+
+fig = plt.figure(figsize=(10,9)) # dimension de la figure
+ax1 = fig.add_subplot(111)
+
 ax.plot(x,y) # on plot sur cet axe en particulier
 
 plt.show()
 ```
-Cette technique permet de configurer indépendemment les axes (par exemple mettre en échelle logarithmiques)
+Cette technique permet de configurer indépendemment les axes (par exemple mettre en échelle logarithmique)
 
-Pour avoir plusieurs 
+C'est aussi possible d'utiliser la forme:
 
-|||
-|-|-|
-|![](./img/tutto.png)|![](./img/tutto.png)
-|||
+```python
+fig = plt.figure(figsize=(10,9)) # dimension de la figure
+ax1 = fig.add_subplot(221) 
+ax2 = fig.add_subplot(222)
+ax3 = fig.add_subplot(223)
+ax4 = fig.add_subplot(224)
+```
+Les axes sont numérotés de droite à gauche et de haut en bas.
+
+Par exemple, `221` signifie "créer un axe à la première place dans une disposition 2 ligne, 2 colonnes" (donc en haut à gauche )
+
+### La fonction plot()
+
+plt.plot() prends plusieurs arguments:
+`color = "blue,`
+
+
+
+# Docker 
 
 
 
@@ -66,7 +87,14 @@ Pour avoir plusieurs
 
 
 
-## Matplotlib et LaTeX
+
+
+
+
+
+
+
+
 
 
 
