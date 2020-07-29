@@ -1,4 +1,4 @@
-- [Python](#python)
+- [**Python**](#python)
 	- [Matplotlib](#matplotlib)
 		- [Les différentes approches de Matplotlib](#les-différentes-approches-de-matplotlib)
 			- [La plus simple (et la moins recommandée)](#la-plus-simple-et-la-moins-recommandée)
@@ -6,8 +6,13 @@
 		- [La fonction plot()](#la-fonction-plot)
 - [Docker](#docker)
 	- [Commandes de bases](#commandes-de-bases)
+- [REDIS](#redis)
+- [FLASK](#flask)
+- [DASH](#dash)
+- [UNIX](#unix)
+- [JAVASCRIPT](#javascript)
 
-# Python
+# **Python**
 ## Matplotlib
 Dans matplotlib, il y a deux "objets" principaux:
 
@@ -103,6 +108,57 @@ Start container and link bash
 
 Run another terminal in a container:
 `docker exec -it <container> bash`
+
+
+# REDIS
+
+Afficher toutes les clés d'une database:
+
+`SCAN <NOMBREDATABASE>`
+
+
+# FLASK
+
+
+# DASH
+
+# UNIX
+
+Compresser un fichier:  `tar -zcvf <nom>.tar.gz <nomDossier>`
+
+Trouver les fichiers et supprimer dans sous-dossiers : `find . -name \*.png -type f -delete`
+
+
+# JAVASCRIPT
+
+fonction isolée (sont exécutées directement):
+```JAVASCRIPT
+(function(){})();
+```
+
+Sans déclaration de type, variable est globale !
+
+
+Exemple récupérer donnée d'un dom:
+
+```javascript
+<div id="myDiv">
+    <p>Un peu de texte <a>et un lien</a></p>
+</div>
+
+<script>
+    var div = document.getElementById('myDiv');
+
+    alert(div);
+</script>
+```
+
+
+
+
+
+
+
 
 
 
