@@ -1,19 +1,34 @@
-- [**Python**](#python)
-	- [Matplotlib](#matplotlib)
-		- [Les différentes approches de Matplotlib](#les-différentes-approches-de-matplotlib)
-			- [La plus simple (et la moins recommandée)](#la-plus-simple-et-la-moins-recommandée)
-			- [La plus complète (recommandée)](#la-plus-complète-recommandée)
-		- [La fonction plot()](#la-fonction-plot)
-- [Docker](#docker)
-	- [Commandes de bases](#commandes-de-bases)
-- [REDIS](#redis)
-- [FLASK](#flask)
-- [DASH](#dash)
-- [UNIX](#unix)
-- [JAVASCRIPT](#javascript)
 
-# **Python**
-## Matplotlib
+<!-- TOC -->autoauto- [Python](#python)auto    - [Actions de base](#actions-de-base)auto        - [Lire un fichier de données](#lire-un-fichier-de-données)auto            - [Avec le module pandas](#avec-le-module-pandas)auto        - [Matplotlib](#matplotlib)auto        - [Les différentes approches de Matplotlib](#les-différentes-approches-de-matplotlib)auto            - [La plus simple (et la moins recommandée)](#la-plus-simple-et-la-moins-recommandée)auto            - [La plus complète (recommandée)](#la-plus-complète-recommandée)auto        - [La fonction plot()](#la-fonction-plot)auto    - [Flask](#flask)auto- [DOCKER](#docker)auto    - [Commandes de bases](#commandes-de-bases)auto- [UNIX](#unix)auto- [JAVASCRIPT](#javascript)autoauto<!-- /TOC -->
+
+# Python
+
+## Actions de base
+
+### Lire un fichier de données avec le module `pandas`
+
+
+
+Si on a un fichier de données `exemple.txt` (ou `exemple.csv`, tant qu'il est composé de colonnes) dans le même dossier que le fichier python. 
+
+
+On utilise la fonction `read_csv()` pour importer les données:
+
+```py
+import pandas as pd #  On importe le module pandas (et on le renomme localement pd)
+
+data = pd.read_csv("exemple.txt")
+```
+Pour accéder aux données de `data` : `data["nom_de_la_colonne"]`.
+
+`read_csv()` prend plusieurs paramètres supplémentaires, dont :
+
+* `sep` = "<caractère>" : précise le caractère qui sépare les colonnes du fichier : `\t` pour une tabulation (par défaut)
+* `header= None` : va charger les données sans les noms des colonnes
+
+
+
+### Matplotlib
 Dans matplotlib, il y a deux "objets" principaux:
 
 * Les figures: on peut les considérer comme les "fenêtres"
@@ -84,18 +99,16 @@ Par exemple, `221` signifie "créer un axe à la première place dans une dispos
 
 ### La fonction plot()
 
-plt.plot() prends plusieurs arguments:
-`color = "blue,`
+plt.plot() prends plusieurs arguments: <br>
+`color = "blue"`
 
+## Flask
 
-
-# Docker 
+# DOCKER
 
 ## Commandes de bases
 
 Créer un nouveau container:
-
-
 
 View all containers: 
 `docker ps -a`
@@ -110,17 +123,7 @@ Run another terminal in a container:
 `docker exec -it <container> bash`
 
 
-# REDIS
 
-Afficher toutes les clés d'une database:
-
-`SCAN <NOMBREDATABASE>`
-
-
-# FLASK
-
-
-# DASH
 
 # UNIX
 
@@ -138,7 +141,6 @@ fonction isolée (sont exécutées directement):
 
 Sans déclaration de type, variable est globale !
 
-
 Exemple récupérer donnée d'un dom:
 
 ```javascript
@@ -148,10 +150,10 @@ Exemple récupérer donnée d'un dom:
 
 <script>
     var div = document.getElementById('myDiv');
-
     alert(div);
 </script>
 ```
+
 
 
 
