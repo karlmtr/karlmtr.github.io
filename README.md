@@ -1,6 +1,4 @@
 
-<!-- TOC -->autoauto- [Python](#python)auto    - [Actions de base](#actions-de-base)auto        - [Lire un fichier de données](#lire-un-fichier-de-données)auto            - [Avec le module pandas](#avec-le-module-pandas)auto        - [Matplotlib](#matplotlib)auto        - [Les différentes approches de Matplotlib](#les-différentes-approches-de-matplotlib)auto            - [La plus simple (et la moins recommandée)](#la-plus-simple-et-la-moins-recommandée)auto            - [La plus complète (recommandée)](#la-plus-complète-recommandée)auto        - [La fonction plot()](#la-fonction-plot)auto    - [Flask](#flask)auto- [DOCKER](#docker)auto    - [Commandes de bases](#commandes-de-bases)auto- [UNIX](#unix)auto- [JAVASCRIPT](#javascript)autoauto<!-- /TOC -->
-
 # Python
 
 ## Actions de base
@@ -23,7 +21,7 @@ Pour accéder aux données de `data` : `data["nom_de_la_colonne"]`.
 
 `read_csv()` prend plusieurs paramètres supplémentaires, dont :
 
-* `sep` = "<caractère>" : précise le caractère qui sépare les colonnes du fichier : `\t` pour une tabulation (par défaut)
+* `sep` = "\<caractère\>" : précise le caractère qui sépare les colonnes du fichier : `\t` pour une tabulation (par défaut)
 * `header= None` : va charger les données sans les noms des colonnes
 
 
@@ -131,33 +129,9 @@ Compresser un fichier:  `tar -zcvf <nom>.tar.gz <nomDossier>`
 
 Trouver les fichiers et supprimer dans sous-dossiers : `find . -name \*.png -type f -delete`
 
+# cURL adresses utiles 
 
-# JAVASCRIPT
-
-fonction isolée (sont exécutées directement):
-```JAVASCRIPT
-(function(){})();
-```
-
-Sans déclaration de type, variable est globale !
-
-Exemple récupérer donnée d'un dom:
-
-```javascript
-<div id="myDiv">
-    <p>Un peu de texte <a>et un lien</a></p>
-</div>
-
-<script>
-    var div = document.getElementById('myDiv');
-    alert(div);
-</script>
-```
-
-
-
-
-
+    *  
 
 
 
